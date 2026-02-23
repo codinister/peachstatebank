@@ -10,6 +10,7 @@ United States`,
   online_banking_id: 'lilrollinson29',
   account_status: 'Active',
   account_opened_date: 'June 21, 2021',
-  current_balance: '$4,485,233.00',
-  currency: '$'
+  current_balance: '4,485,233.00',
+  currency: '$', 
+  product_name: 'CLASSIC CURRENT ACCOUNT'
 };
