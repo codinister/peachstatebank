@@ -4,7 +4,7 @@ import PaymentForm from '@/components/PaymentForm';
 
 const Payment = () => {
   return (
-    <div className="pl-15 my-15">
+    <div className=" p-6 sm:p-15 my-15 mx-auto">
       <PaymentForm />
     </div>
   );

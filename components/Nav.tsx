@@ -72,7 +72,7 @@ const Nav = () => {
 
               <li className="group  mb-4 ">
                 <Link
-                  href="/dashboard"
+                  href="/payment"
                   className="paydropdown flex justify-between items-center group-hover:text-primary"
                   onClick={() => setOpen(false)}
                 >
@@ -80,11 +80,6 @@ const Nav = () => {
                     <MdOutlinePayments /> Payments
                   </div>
                   <MdKeyboardArrowRight className="text-2xl" />
-                  <ul>
-                    <li>
-                      <Link href="/payment">One time Payment</Link>
-                    </li>
-                  </ul>
                 </Link>
               </li>
 
