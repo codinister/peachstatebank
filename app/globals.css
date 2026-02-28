@@ -1,5 +1,4 @@
-@import "tailwindcss";
-
+@import 'tailwindcss';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -58,7 +57,7 @@
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.43 0.11 240);
   --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.57 0.00 0);
+  --muted: oklch(0.57 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
@@ -144,8 +143,27 @@
     font-size: 4rem;
     line-height: 4.8rem;
   }
-  ul{
+  ul {
     list-style: none;
   }
+}
 
+@layer utilities {
+  .paydropdown {
+    position: relative;
+    & > ul {
+      background-color: white;
+      padding: 8px;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+    }
+    &:hover{
+      & > ul{
+        display: block;
+      }
+    }
+  }
 }

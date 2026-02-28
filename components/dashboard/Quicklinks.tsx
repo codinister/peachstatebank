@@ -4,6 +4,7 @@ import { RiSecurePaymentLine } from 'react-icons/ri';
 import { SlPeople } from 'react-icons/sl';
 import { LuCalculator } from 'react-icons/lu';
 import { GoFileBinary } from 'react-icons/go';
+import Link from 'next/link';
 
 const Quicklinks = () => {
   return (
@@ -12,8 +13,10 @@ const Quicklinks = () => {
 
       <div className="flex gap-6 flex-wrap">
         <div className="flex-1 text-center">
-          <FaSackDollar className="text-secondary/70 text-5xl mx-auto" />
-          <span className="text-[8px]">One time Payment</span>
+          <Link href="/payment" className="text-[8px]">
+            <FaSackDollar className="text-secondary/70 text-5xl mx-auto" />
+            <span>One time Payment</span>
+          </Link>
         </div>
         <div className="flex-1 text-center">
           <FaSackDollar className="text-primary text-5xl mx-auto" />
